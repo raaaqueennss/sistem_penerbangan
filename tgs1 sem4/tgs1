@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Perintah Output
+        System.out.println("Hello, world!");
+
+        // Perintah Input
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan angka: ");
+        int angka = scanner.nextInt();
+        System.out.println("Angka yang dimasukkan: " + angka);
+
+        // Perintah Kondisi
+        int x = 10;
+        if (x > 5) {
+            System.out.println("x lebih besar dari 5");
+        } else {
+            System.out.println("x kurang dari atau sama dengan 5");
+        }
+
+        // Perintah Perulangan
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Iterasi ke-" + i);
+        }
+
+        // Perintah class
+        MyClass obj = new MyClass();
+        obj.myMethod();
+    }
+}
+
+class MyClass {
+    public void myMethod() {
+        System.out.println("Ini adalah method dari class MyClass");
+    }
+}
